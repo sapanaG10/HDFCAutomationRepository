@@ -57,7 +57,7 @@ public class VerifyLoginPage extends Base {
 	public void goToLoginPage() throws InterruptedException {
 		System.out.println("before method");
 	    driver.get("https://www.hdfcbank.com/");
-	    Thread.sleep(3000);
+	    Thread.sleep(4000);
 	}
 	
 	@Test(priority=3)
@@ -69,7 +69,7 @@ public class VerifyLoginPage extends Base {
 	}
 	@Test(priority=2)
 	public void verifyAgriPage() throws InterruptedException {
-		Thread.sleep(5000);
+		Thread.sleep(6000);
 		ArrayList<String> addr=new ArrayList<String> (driver.getWindowHandles());
 		driver.switchTo().window(addr.get(0));
 		Thread.sleep(5000);

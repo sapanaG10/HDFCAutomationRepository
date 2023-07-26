@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\amol\eclipse-workspace\Maven-HDFCBank-Automation\RegressionSuit.xml</span>
+                    <span>C:\Users\amol\git\HDFCAutomationRepository\Maven-HDFCBank-Automation\RegressionSuit.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">12 methods, 1 failed,  10 skipped,  1 passed</span>
+                    <span class="method-stats">12 methods, 2 failed,  8 skipped,  2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,6 +102,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
                     <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestNG.VerifyLoginPage" class="method navigator-link" hash-for-method="verifyAgriPage">verifyAgriPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TestNG.VerifyLoginPage" class="method navigator-link" hash-for-method="verifyAgriPage">verifyAgriPage</a> <!-- method navigator-link -->
@@ -116,16 +121,6 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
                     </span>
                     <div class="method-list-content skipped suite-Suite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestNG.VerifyAboutUsPage" class="method navigator-link" hash-for-method="verifyAboutUsPage">verifyAboutUsPage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestNG.VerifyLoginPage" class="method navigator-link" hash-for-method="verifyAgriPage">verifyAgriPage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TestNG.VerifyLoginPage" class="method navigator-link" hash-for-method="verifyApplyOnline">verifyApplyOnline</a> <!-- method navigator-link -->
@@ -180,6 +175,11 @@
                         <a href="#" panel-name="suite-Suite" title="TestNG.VerifyAboutUsPage" class="method navigator-link" hash-for-method="verifyAboutUsPage">verifyAboutUsPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestNG.VerifyAboutUsPage" class="method navigator-link" hash-for-method="verifyAboutUsPage">verifyAboutUsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -224,6 +224,32 @@ Driver info: driver.version: RemoteWebDriver
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAgriPage">
+                  </a> <!-- verifyAgriPage -->
+                  <span class="method-name">verifyAgriPage</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//a[text()=&apos;Kisan Gold Card - Agri Loan&apos;]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at Page.AgriPage.KisanGoldCardButton(AgriPage.java:21)
+	at TestNG.VerifyLoginPage.verifyAgriPage(VerifyLoginPage.java:80)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-skipped">
@@ -234,131 +260,27 @@ Driver info: driver.version: RemoteWebDriver
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyAboutUsPage">
-                  </a> <!-- verifyAboutUsPage -->
-                  <span class="method-name">verifyAboutUsPage</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 112
-Current browser version is 115.0.1901.183 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: driver.version: EdgeDriver
-remote stacktrace: Backtrace:
-	GetHandleVerifier [0x00007FF74DFBDF92+60274]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF4EBF2+818946]
-	(No symbol) [0x00007FF74DBDDFAE]
-	(No symbol) [0x00007FF74DC0E378]
-	(No symbol) [0x00007FF74DC08D24]
-	(No symbol) [0x00007FF74DC0440A]
-	(No symbol) [0x00007FF74DC47341]
-	(No symbol) [0x00007FF74DC3F343]
-	(No symbol) [0x00007FF74DC11796]
-	(No symbol) [0x00007FF74DC10975]
-	(No symbol) [0x00007FF74DC11F04]
-	Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DE527D7+1593703]
-	Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DCFAC5D+185837]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE8FD47+36951]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE87E55+4453]
-	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF74E18FDB3+1319011]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF56CAC+851900]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52D14+835620]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52E6C+835964]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF48A41+793937]
-	BaseThreadInitThunk [0x00007FFD565926AD+29]
-	RtlUserThreadStart [0x00007FFD57B6AA68+40]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
-	at BrowserSetup.Base.openEdgeBrowser(Base.java:21)
-	at TestNG.VerifyAboutUsPage.openBrowser(VerifyAboutUsPage.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 20 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="verifyCareerPage">
                   </a> <!-- verifyCareerPage -->
                   <span class="method-name">verifyCareerPage</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 112
-Current browser version is 115.0.1901.183 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: driver.version: EdgeDriver
-remote stacktrace: Backtrace:
-	GetHandleVerifier [0x00007FF74DFBDF92+60274]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF4EBF2+818946]
-	(No symbol) [0x00007FF74DBDDFAE]
-	(No symbol) [0x00007FF74DC0E378]
-	(No symbol) [0x00007FF74DC08D24]
-	(No symbol) [0x00007FF74DC0440A]
-	(No symbol) [0x00007FF74DC47341]
-	(No symbol) [0x00007FF74DC3F343]
-	(No symbol) [0x00007FF74DC11796]
-	(No symbol) [0x00007FF74DC10975]
-	(No symbol) [0x00007FF74DC11F04]
-	Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DE527D7+1593703]
-	Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DCFAC5D+185837]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE8FD47+36951]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE87E55+4453]
-	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF74E18FDB3+1319011]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF56CAC+851900]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52D14+835620]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52E6C+835964]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF48A41+793937]
-	BaseThreadInitThunk [0x00007FFD565926AD+29]
-	RtlUserThreadStart [0x00007FFD57B6AA68+40]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60025}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 262629895ac340b2860b48410866467b
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
-	at BrowserSetup.Base.openEdgeBrowser(Base.java:21)
-	at TestNG.VerifyAboutUsPage.openBrowser(VerifyAboutUsPage.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at TestNG.VerifyAboutUsPage.goToLoginPage(VerifyAboutUsPage.java:73)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 20 stack frames
+... Removed 21 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -370,9 +292,9 @@ remote stacktrace: Backtrace:
                   <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58071}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6517d2e681c803a1fa484a1efd63487a
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.183, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60044}, msedge: {msedgedriverVersion: 114.0.1823.82 (ac4903679dd6..., userDataDir: C:\Users\amol\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0c6e6fbe0b6582884e93113a57906b24
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -393,63 +315,24 @@ Session ID: 6517d2e681c803a1fa484a1efd63487a
                   <a name="verifySmartBuyPage">
                   </a> <!-- verifySmartBuyPage -->
                   <span class="method-name">verifySmartBuyPage</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 112
-Current browser version is 115.0.1901.183 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: driver.version: EdgeDriver
-remote stacktrace: Backtrace:
-	GetHandleVerifier [0x00007FF74DFBDF92+60274]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF4EBF2+818946]
-	(No symbol) [0x00007FF74DBDDFAE]
-	(No symbol) [0x00007FF74DC0E378]
-	(No symbol) [0x00007FF74DC08D24]
-	(No symbol) [0x00007FF74DC0440A]
-	(No symbol) [0x00007FF74DC47341]
-	(No symbol) [0x00007FF74DC3F343]
-	(No symbol) [0x00007FF74DC11796]
-	(No symbol) [0x00007FF74DC10975]
-	(No symbol) [0x00007FF74DC11F04]
-	Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DE527D7+1593703]
-	Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DCFAC5D+185837]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE8FD47+36951]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE87E55+4453]
-	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF74E18FDB3+1319011]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF56CAC+851900]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52D14+835620]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52E6C+835964]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF48A41+793937]
-	BaseThreadInitThunk [0x00007FFD565926AD+29]
-	RtlUserThreadStart [0x00007FFD57B6AA68+40]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60025}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 262629895ac340b2860b48410866467b
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
-	at BrowserSetup.Base.openEdgeBrowser(Base.java:21)
-	at TestNG.VerifyAboutUsPage.openBrowser(VerifyAboutUsPage.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at TestNG.VerifyAboutUsPage.goToLoginPage(VerifyAboutUsPage.java:73)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 20 stack frames
+... Removed 21 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -461,9 +344,9 @@ remote stacktrace: Backtrace:
                   <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58071}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6517d2e681c803a1fa484a1efd63487a
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.183, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60044}, msedge: {msedgedriverVersion: 114.0.1823.82 (ac4903679dd6..., userDataDir: C:\Users\amol\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0c6e6fbe0b6582884e93113a57906b24
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -489,131 +372,29 @@ Session ID: 6517d2e681c803a1fa484a1efd63487a
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyAgriPage">
-                  </a> <!-- verifyAgriPage -->
-                  <span class="method-name">verifyAgriPage</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 112
-Current browser version is 115.0.1901.183 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: driver.version: EdgeDriver
-remote stacktrace: Backtrace:
-	GetHandleVerifier [0x00007FF74DFBDF92+60274]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF4EBF2+818946]
-	(No symbol) [0x00007FF74DBDDFAE]
-	(No symbol) [0x00007FF74DC0E378]
-	(No symbol) [0x00007FF74DC08D24]
-	(No symbol) [0x00007FF74DC0440A]
-	(No symbol) [0x00007FF74DC47341]
-	(No symbol) [0x00007FF74DC3F343]
-	(No symbol) [0x00007FF74DC11796]
-	(No symbol) [0x00007FF74DC10975]
-	(No symbol) [0x00007FF74DC11F04]
-	Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DE527D7+1593703]
-	Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DCFAC5D+185837]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE8FD47+36951]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE87E55+4453]
-	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF74E18FDB3+1319011]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF56CAC+851900]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52D14+835620]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52E6C+835964]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF48A41+793937]
-	BaseThreadInitThunk [0x00007FFD565926AD+29]
-	RtlUserThreadStart [0x00007FFD57B6AA68+40]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
-	at BrowserSetup.Base.openEdgeBrowser(Base.java:21)
-	at TestNG.VerifyAboutUsPage.openBrowser(VerifyAboutUsPage.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 20 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="verifyApplyOnline">
                   </a> <!-- verifyApplyOnline -->
                   <span class="method-name">verifyApplyOnline</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 112
-Current browser version is 115.0.1901.183 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.248)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: driver.version: EdgeDriver
-remote stacktrace: Backtrace:
-	GetHandleVerifier [0x00007FF74DFBDF92+60274]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF4EBF2+818946]
-	(No symbol) [0x00007FF74DBDDFAE]
-	(No symbol) [0x00007FF74DC0E378]
-	(No symbol) [0x00007FF74DC08D24]
-	(No symbol) [0x00007FF74DC0440A]
-	(No symbol) [0x00007FF74DC47341]
-	(No symbol) [0x00007FF74DC3F343]
-	(No symbol) [0x00007FF74DC11796]
-	(No symbol) [0x00007FF74DC10975]
-	(No symbol) [0x00007FF74DC11F04]
-	Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DE527D7+1593703]
-	Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DCFAC5D+185837]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE8FD47+36951]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE87E55+4453]
-	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF74E18FDB3+1319011]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF56CAC+851900]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52D14+835620]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52E6C+835964]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF48A41+793937]
-	BaseThreadInitThunk [0x00007FFD565926AD+29]
-	RtlUserThreadStart [0x00007FFD57B6AA68+40]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60051}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 885231571d080113d949db24c2cd1518
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
-	at BrowserSetup.Base.openEdgeBrowser(Base.java:21)
-	at TestNG.VerifyAboutUsPage.openBrowser(VerifyAboutUsPage.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at TestNG.VerifyLoginPage.goToLoginPage(VerifyLoginPage.java:59)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 20 stack frames
+... Removed 21 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -624,12 +405,12 @@ remote stacktrace: Backtrace:
                   <span class="method-name">verifyApplyOnline</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=114.0.5735.248)
+  (Session info: MicrosoftEdge=115.0.1901.183)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58086}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1363fe5691d90df934d7aa859f610cba
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.183, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60125}, msedge: {msedgedriverVersion: 114.0.1823.82 (ac4903679dd6..., userDataDir: C:\Users\amol\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 797501843b4fdf3d3884d0143bb0ad42
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -650,63 +431,26 @@ Session ID: 1363fe5691d90df934d7aa859f610cba
                   <a name="verifyLoginToNetBankingPage">
                   </a> <!-- verifyLoginToNetBankingPage -->
                   <span class="method-name">verifyLoginToNetBankingPage</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 112
-Current browser version is 115.0.1901.183 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.248)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: driver.version: EdgeDriver
-remote stacktrace: Backtrace:
-	GetHandleVerifier [0x00007FF74DFBDF92+60274]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF4EBF2+818946]
-	(No symbol) [0x00007FF74DBDDFAE]
-	(No symbol) [0x00007FF74DC0E378]
-	(No symbol) [0x00007FF74DC08D24]
-	(No symbol) [0x00007FF74DC0440A]
-	(No symbol) [0x00007FF74DC47341]
-	(No symbol) [0x00007FF74DC3F343]
-	(No symbol) [0x00007FF74DC11796]
-	(No symbol) [0x00007FF74DC10975]
-	(No symbol) [0x00007FF74DC11F04]
-	Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DE527D7+1593703]
-	Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DCFAC5D+185837]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE8FD47+36951]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE87E55+4453]
-	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF74E18FDB3+1319011]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF56CAC+851900]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52D14+835620]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52E6C+835964]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF48A41+793937]
-	BaseThreadInitThunk [0x00007FFD565926AD+29]
-	RtlUserThreadStart [0x00007FFD57B6AA68+40]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60051}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 885231571d080113d949db24c2cd1518
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
-	at BrowserSetup.Base.openEdgeBrowser(Base.java:21)
-	at TestNG.VerifyAboutUsPage.openBrowser(VerifyAboutUsPage.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at TestNG.VerifyLoginPage.goToLoginPage(VerifyLoginPage.java:59)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 20 stack frames
+... Removed 21 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -717,12 +461,12 @@ remote stacktrace: Backtrace:
                   <span class="method-name">verifyLoginToNetBankingPage</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=114.0.5735.248)
+  (Session info: MicrosoftEdge=115.0.1901.183)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58086}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1363fe5691d90df934d7aa859f610cba
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.183, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60125}, msedge: {msedgedriverVersion: 114.0.1823.82 (ac4903679dd6..., userDataDir: C:\Users\amol\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 797501843b4fdf3d3884d0143bb0ad42
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -753,12 +497,19 @@ Session ID: 1363fe5691d90df934d7aa859f610cba
                   <span class="method-name">verifyAboutUsPage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAboutUsPage">
+                  </a> <!-- verifyAboutUsPage -->
+                  <span class="method-name">verifyAboutUsPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\amol\eclipse-workspace\Maven-HDFCBank-Automation\RegressionSuit.xml</span>
+            <span class="header-content">C:\Users\amol\git\HDFCAutomationRepository\Maven-HDFCBank-Automation\RegressionSuit.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -823,46 +574,46 @@ data.addRows(12);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyAgriPage')
 data.setCell(0, 2, 'TestNG.VerifyLoginPage')
-data.setCell(0, 3, 30795);
+data.setCell(0, 3, 32755);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyAboutUsPage')
-data.setCell(1, 2, 'TestNG.VerifyAboutUsPage')
-data.setCell(1, 3, 8490);
+data.setCell(1, 1, 'verifyAgriPage')
+data.setCell(1, 2, 'TestNG.VerifyLoginPage')
+data.setCell(1, 3, 32285);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifySmartBuyPage')
+data.setCell(2, 1, 'verifyAboutUsPage')
 data.setCell(2, 2, 'TestNG.VerifyAboutUsPage')
-data.setCell(2, 3, 0);
+data.setCell(2, 3, 10661);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyAboutUsPage')
 data.setCell(3, 2, 'TestNG.VerifyAboutUsPage')
-data.setCell(3, 3, 0);
+data.setCell(3, 3, 9317);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyAgriPage')
-data.setCell(4, 2, 'TestNG.VerifyLoginPage')
+data.setCell(4, 1, 'verifySmartBuyPage')
+data.setCell(4, 2, 'TestNG.VerifyAboutUsPage')
 data.setCell(4, 3, 0);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyApplyOnline')
+data.setCell(5, 1, 'verifyLoginToNetBankingPage')
 data.setCell(5, 2, 'TestNG.VerifyLoginPage')
 data.setCell(5, 3, 0);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyLoginToNetBankingPage')
-data.setCell(6, 2, 'TestNG.VerifyLoginPage')
+data.setCell(6, 1, 'verifyCareerPage')
+data.setCell(6, 2, 'TestNG.VerifyAboutUsPage')
 data.setCell(6, 3, 0);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyCareerPage')
-data.setCell(7, 2, 'TestNG.VerifyAboutUsPage')
+data.setCell(7, 1, 'verifyApplyOnline')
+data.setCell(7, 2, 'TestNG.VerifyLoginPage')
 data.setCell(7, 3, 0);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'verifyApplyOnline')
 data.setCell(8, 2, 'TestNG.VerifyLoginPage')
 data.setCell(8, 3, 0);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verifyCareerPage')
-data.setCell(9, 2, 'TestNG.VerifyAboutUsPage')
+data.setCell(9, 1, 'verifyLoginToNetBankingPage')
+data.setCell(9, 2, 'TestNG.VerifyLoginPage')
 data.setCell(9, 3, 0);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'verifyLoginToNetBankingPage')
-data.setCell(10, 2, 'TestNG.VerifyLoginPage')
+data.setCell(10, 1, 'verifyCareerPage')
+data.setCell(10, 2, 'TestNG.VerifyAboutUsPage')
 data.setCell(10, 3, 0);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'verifySmartBuyPage')
@@ -872,7 +623,7 @@ window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 41 seconds</span>
+              <span class="suite-total-time">Total running time: 51 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -904,8 +655,6 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">openBrowser(Edge)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
@@ -913,271 +662,247 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">TestNG.VerifyLoginPage</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">openBrowser</span>
-                <span class="method-start">2164 ms</span>
+                <span class="method-name">openBrowser(Chrome)</span>
+                <span class="method-start">2059 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">openBrowser(Edge)</span>
+                <span class="method-start">3320 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestNG.VerifyAboutUsPage</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">createPOMObjects</span>
-                <span class="method-start">2195 ms</span>
+                <span class="method-start">3952 ms</span>
               </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestNG.VerifyLoginPage</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">openBrowser</span>
-                <span class="method-start">2195 ms</span>
+                <span class="method-start">3952 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">goToLoginPage</span>
-                <span class="method-start">2213 ms</span>
+                <span class="method-start">3996 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestNG.VerifyAboutUsPage</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">goToLoginPage</span>
-                <span class="method-start">2213 ms</span>
+                <span class="method-start">3996 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-class before">
+                <span class="method-name">createPOMObjects</span>
+                <span class="method-start">7695 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestNG.VerifyLoginPage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">7699 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">goToLoginPage</span>
+                <span class="method-start">7714 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestNG.VerifyAboutUsPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">goToLoginPage</span>
+                <span class="method-start">7722 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyAboutUsPage</span>
-                <span class="method-start">2217 ms</span>
+                <span class="method-start">11416 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestNG.VerifyLoginPage</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyAgriPage</span>
-                <span class="method-start">2217 ms</span>
+                <span class="method-start">15291 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestNG.VerifyAboutUsPage</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">logOut</span>
-                <span class="method-start">2225 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestNG.VerifyLoginPage</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">cleareObjects</span>
-                <span class="method-start">2227 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">goToLoginPage</span>
-                <span class="method-start">2231 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestNG.VerifyAboutUsPage</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">goToLoginPage</span>
-                <span class="method-start">2231 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAboutUsPage</span>
+                <span class="method-start">18465 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestNG.VerifyLoginPage</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">verifyLoginToNetBankingPage</span>
-                <span class="method-start">2234 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAgriPage</span>
+                <span class="method-start">18729 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestNG.VerifyAboutUsPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">logOut([TestResult name=verifyAboutUsPage status=SUCCESS method=VerifyAboutUsPage.verifyAboutUsPage()[pri:1...)</span>
+                <span class="method-start">20740 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">goToLoginPage</span>
+                <span class="method-start">21089 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyCareerPage</span>
-                <span class="method-start">2235 ms</span>
+                <span class="method-start">21512 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOut</span>
+                <span class="method-start">21528 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">goToLoginPage</span>
+                <span class="method-start">21532 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySmartBuyPage</span>
+                <span class="method-start">21534 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOut</span>
+                <span class="method-start">21540 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">clearObjects</span>
+                <span class="method-start">21547 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-method after">
+                <span class="method-name">logOut([TestResult name=verifyAboutUsPage status=SUCCESS method=VerifyAboutUsPage.verifyAboutUsPage()[pri:1...)</span>
+                <span class="method-start">29132 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">goToLoginPage</span>
+                <span class="method-start">30931 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyCareerPage</span>
+                <span class="method-start">31806 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOut</span>
+                <span class="method-start">31824 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">goToLoginPage</span>
+                <span class="method-start">31831 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySmartBuyPage</span>
+                <span class="method-start">31837 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOut</span>
+                <span class="method-start">31851 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">clearObjects</span>
+                <span class="method-start">31863 ms</span>
+              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestNG.VerifyLoginPage</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">cleareObjects</span>
-                <span class="method-start">2238 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestNG.VerifyAboutUsPage</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">logOut</span>
-                <span class="method-start">2239 ms</span>
+                <span class="method-start">48049 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">goToLoginPage</span>
-                <span class="method-start">2242 ms</span>
+                <span class="method-start">48050 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestNG.VerifyLoginPage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginToNetBankingPage</span>
+                <span class="method-start">48057 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleareObjects</span>
+                <span class="method-start">48060 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">goToLoginPage</span>
-                <span class="method-start">2242 ms</span>
+                <span class="method-start">48061 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyApplyOnline</span>
-                <span class="method-start">2245 ms</span>
+                <span class="method-start">48063 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestNG.VerifyAboutUsPage</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifySmartBuyPage</span>
-                <span class="method-start">2246 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestNG.VerifyLoginPage</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">cleareObjects</span>
-                <span class="method-start">2249 ms</span>
+                <span class="method-start">48065 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestNG.VerifyAboutUsPage</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">logOut</span>
-                <span class="method-start">2250 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestNG.VerifyLoginPage</div> <!-- chronological-class-name -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">2254 ms</span>
+                <span class="method-start">48065 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestNG.VerifyAboutUsPage</div> <!-- chronological-class-name -->
-              <div class="configuration-class after">
-                <span class="method-name">clearObjects</span>
-                <span class="method-start">2255 ms</span>
-              </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">2259 ms</span>
+                <span class="method-start">48066 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestNG.VerifyLoginPage</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">openBrowser(Chrome)</span>
-                <span class="method-start">3115 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-class before">
-                <span class="method-name">openBrowser</span>
-                <span class="method-start">4450 ms</span>
-              </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestNG.VerifyAboutUsPage</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">createPOMObjects</span>
-                <span class="method-start">4450 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">goToLoginPage</span>
-                <span class="method-start">4495 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestNG.VerifyLoginPage</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">goToLoginPage</span>
-                <span class="method-start">4495 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyAgriPage</span>
-                <span class="method-start">10316 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestNG.VerifyAboutUsPage</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyAboutUsPage</span>
-                <span class="method-start">11056 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logOut([TestResult name=verifyAboutUsPage status=SUCCESS method=VerifyAboutUsPage.verifyAboutUsPage()[pri:1...)</span>
-                <span class="method-start">19551 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">goToLoginPage</span>
-                <span class="method-start">19725 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyCareerPage</span>
-                <span class="method-start">19871 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logOut</span>
-                <span class="method-start">19874 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">goToLoginPage</span>
-                <span class="method-start">19876 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifySmartBuyPage</span>
-                <span class="method-start">19877 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logOut</span>
-                <span class="method-start">19879 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">clearObjects</span>
-                <span class="method-start">19881 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestNG.VerifyLoginPage</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">cleareObjects</span>
-                <span class="method-start">41115 ms</span>
+                <span class="method-start">51015 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">goToLoginPage</span>
-                <span class="method-start">41116 ms</span>
+                <span class="method-start">51016 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginToNetBankingPage</span>
-                <span class="method-start">41132 ms</span>
+                <span class="method-start">51023 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">cleareObjects</span>
-                <span class="method-start">41136 ms</span>
+                <span class="method-start">51024 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">goToLoginPage</span>
-                <span class="method-start">41138 ms</span>
+                <span class="method-start">51025 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyApplyOnline</span>
-                <span class="method-start">41139 ms</span>
+                <span class="method-start">51026 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">cleareObjects</span>
-                <span class="method-start">41143 ms</span>
+                <span class="method-start">51027 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">41145 ms</span>
+                <span class="method-start">51029 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestNG.VerifyAboutUsPage</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">41146 ms</span>
+                <span class="method-start">51030 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

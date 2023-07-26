@@ -1,910 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="1" failed="1" skipped="10">
+<testng-results ignored="0" total="12" passed="2" failed="2" skipped="8">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-26T17:05:48 IST" name="Suite" finished-at="2023-07-26T17:06:29 IST" duration-ms="41154">
+  <suite started-at="2023-07-26T20:32:18 IST" name="Suite" finished-at="2023-07-26T20:33:09 IST" duration-ms="51036">
     <groups>
     </groups>
-    <test started-at="2023-07-26T17:05:48 IST" name="EdgeTest" finished-at="2023-07-26T17:05:50 IST" duration-ms="2267">
+    <test started-at="2023-07-26T20:32:18 IST" name="ChromeTest" finished-at="2023-07-26T20:33:06 IST" duration-ms="48073">
       <class name="TestNG.VerifyLoginPage">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:TestNG.VerifyLoginPage@1a451d4d]" started-at="2023-07-26T17:05:50 IST" name="openBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690371350715" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:TestNG.VerifyLoginPage@1a451d4d]" started-at="2023-07-26T17:05:50 IST" name="openBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690371350746" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:TestNG.VerifyLoginPage@1a451d4d]" started-at="2023-07-26T17:05:50 IST" name="goToLoginPage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690371350764" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToLoginPage -->
-        <test-method signature="verifyAgriPage()[pri:2, instance:TestNG.VerifyLoginPage@1a451d4d]" started-at="2023-07-26T17:05:50 IST" name="verifyAgriPage" finished-at="2023-07-26T17:05:50 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 112
-Current browser version is 115.0.1901.183 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: driver.version: EdgeDriver
-remote stacktrace: Backtrace:
-GetHandleVerifier [0x00007FF74DFBDF92+60274]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF4EBF2+818946]
-(No symbol) [0x00007FF74DBDDFAE]
-(No symbol) [0x00007FF74DC0E378]
-(No symbol) [0x00007FF74DC08D24]
-(No symbol) [0x00007FF74DC0440A]
-(No symbol) [0x00007FF74DC47341]
-(No symbol) [0x00007FF74DC3F343]
-(No symbol) [0x00007FF74DC11796]
-(No symbol) [0x00007FF74DC10975]
-(No symbol) [0x00007FF74DC11F04]
-Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DE527D7+1593703]
-Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DCFAC5D+185837]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE8FD47+36951]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE87E55+4453]
-Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF74E18FDB3+1319011]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF56CAC+851900]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52D14+835620]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52E6C+835964]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF48A41+793937]
-BaseThreadInitThunk [0x00007FFD565926AD+29]
-RtlUserThreadStart [0x00007FFD57B6AA68+40]
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 112
-Current browser version is 115.0.1901.183 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: driver.version: EdgeDriver
-remote stacktrace: Backtrace:
-GetHandleVerifier [0x00007FF74DFBDF92+60274]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF4EBF2+818946]
-(No symbol) [0x00007FF74DBDDFAE]
-(No symbol) [0x00007FF74DC0E378]
-(No symbol) [0x00007FF74DC08D24]
-(No symbol) [0x00007FF74DC0440A]
-(No symbol) [0x00007FF74DC47341]
-(No symbol) [0x00007FF74DC3F343]
-(No symbol) [0x00007FF74DC11796]
-(No symbol) [0x00007FF74DC10975]
-(No symbol) [0x00007FF74DC11F04]
-Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DE527D7+1593703]
-Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DCFAC5D+185837]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE8FD47+36951]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE87E55+4453]
-Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF74E18FDB3+1319011]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF56CAC+851900]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52D14+835620]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52E6C+835964]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF48A41+793937]
-BaseThreadInitThunk [0x00007FFD565926AD+29]
-RtlUserThreadStart [0x00007FFD57B6AA68+40]
-
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
-at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
-at BrowserSetup.Base.openEdgeBrowser(Base.java:21)
-at TestNG.VerifyAboutUsPage.openBrowser(VerifyAboutUsPage.java:58)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-at org.testng.TestRunner.run(TestRunner.java:589)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAgriPage -->
-        <test-method is-config="true" signature="cleareObjects()[pri:0, instance:TestNG.VerifyLoginPage@1a451d4d]" started-at="2023-07-26T17:05:50 IST" name="cleareObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690371350778" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleareObjects -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:TestNG.VerifyLoginPage@1a451d4d]" started-at="2023-07-26T17:05:50 IST" name="goToLoginPage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690371350782" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToLoginPage -->
-        <test-method signature="verifyLoginToNetBankingPage()[pri:2, instance:TestNG.VerifyLoginPage@1a451d4d]" started-at="2023-07-26T17:05:50 IST" name="verifyLoginToNetBankingPage" finished-at="2023-07-26T17:05:50 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 112
-Current browser version is 115.0.1901.183 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: driver.version: EdgeDriver
-remote stacktrace: Backtrace:
-GetHandleVerifier [0x00007FF74DFBDF92+60274]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF4EBF2+818946]
-(No symbol) [0x00007FF74DBDDFAE]
-(No symbol) [0x00007FF74DC0E378]
-(No symbol) [0x00007FF74DC08D24]
-(No symbol) [0x00007FF74DC0440A]
-(No symbol) [0x00007FF74DC47341]
-(No symbol) [0x00007FF74DC3F343]
-(No symbol) [0x00007FF74DC11796]
-(No symbol) [0x00007FF74DC10975]
-(No symbol) [0x00007FF74DC11F04]
-Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DE527D7+1593703]
-Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DCFAC5D+185837]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE8FD47+36951]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE87E55+4453]
-Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF74E18FDB3+1319011]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF56CAC+851900]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52D14+835620]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52E6C+835964]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF48A41+793937]
-BaseThreadInitThunk [0x00007FFD565926AD+29]
-RtlUserThreadStart [0x00007FFD57B6AA68+40]
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 112
-Current browser version is 115.0.1901.183 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: driver.version: EdgeDriver
-remote stacktrace: Backtrace:
-GetHandleVerifier [0x00007FF74DFBDF92+60274]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF4EBF2+818946]
-(No symbol) [0x00007FF74DBDDFAE]
-(No symbol) [0x00007FF74DC0E378]
-(No symbol) [0x00007FF74DC08D24]
-(No symbol) [0x00007FF74DC0440A]
-(No symbol) [0x00007FF74DC47341]
-(No symbol) [0x00007FF74DC3F343]
-(No symbol) [0x00007FF74DC11796]
-(No symbol) [0x00007FF74DC10975]
-(No symbol) [0x00007FF74DC11F04]
-Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DE527D7+1593703]
-Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DCFAC5D+185837]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE8FD47+36951]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE87E55+4453]
-Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF74E18FDB3+1319011]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF56CAC+851900]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52D14+835620]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52E6C+835964]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF48A41+793937]
-BaseThreadInitThunk [0x00007FFD565926AD+29]
-RtlUserThreadStart [0x00007FFD57B6AA68+40]
-
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
-at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
-at BrowserSetup.Base.openEdgeBrowser(Base.java:21)
-at TestNG.VerifyAboutUsPage.openBrowser(VerifyAboutUsPage.java:58)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-at org.testng.TestRunner.run(TestRunner.java:589)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginToNetBankingPage -->
-        <test-method is-config="true" signature="cleareObjects()[pri:0, instance:TestNG.VerifyLoginPage@1a451d4d]" started-at="2023-07-26T17:05:50 IST" name="cleareObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690371350789" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleareObjects -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:TestNG.VerifyLoginPage@1a451d4d]" started-at="2023-07-26T17:05:50 IST" name="goToLoginPage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690371350793" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToLoginPage -->
-        <test-method signature="verifyApplyOnline()[pri:3, instance:TestNG.VerifyLoginPage@1a451d4d]" started-at="2023-07-26T17:05:50 IST" name="verifyApplyOnline" finished-at="2023-07-26T17:05:50 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 112
-Current browser version is 115.0.1901.183 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: driver.version: EdgeDriver
-remote stacktrace: Backtrace:
-GetHandleVerifier [0x00007FF74DFBDF92+60274]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF4EBF2+818946]
-(No symbol) [0x00007FF74DBDDFAE]
-(No symbol) [0x00007FF74DC0E378]
-(No symbol) [0x00007FF74DC08D24]
-(No symbol) [0x00007FF74DC0440A]
-(No symbol) [0x00007FF74DC47341]
-(No symbol) [0x00007FF74DC3F343]
-(No symbol) [0x00007FF74DC11796]
-(No symbol) [0x00007FF74DC10975]
-(No symbol) [0x00007FF74DC11F04]
-Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DE527D7+1593703]
-Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DCFAC5D+185837]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE8FD47+36951]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE87E55+4453]
-Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF74E18FDB3+1319011]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF56CAC+851900]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52D14+835620]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52E6C+835964]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF48A41+793937]
-BaseThreadInitThunk [0x00007FFD565926AD+29]
-RtlUserThreadStart [0x00007FFD57B6AA68+40]
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 112
-Current browser version is 115.0.1901.183 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: driver.version: EdgeDriver
-remote stacktrace: Backtrace:
-GetHandleVerifier [0x00007FF74DFBDF92+60274]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF4EBF2+818946]
-(No symbol) [0x00007FF74DBDDFAE]
-(No symbol) [0x00007FF74DC0E378]
-(No symbol) [0x00007FF74DC08D24]
-(No symbol) [0x00007FF74DC0440A]
-(No symbol) [0x00007FF74DC47341]
-(No symbol) [0x00007FF74DC3F343]
-(No symbol) [0x00007FF74DC11796]
-(No symbol) [0x00007FF74DC10975]
-(No symbol) [0x00007FF74DC11F04]
-Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DE527D7+1593703]
-Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DCFAC5D+185837]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE8FD47+36951]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE87E55+4453]
-Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF74E18FDB3+1319011]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF56CAC+851900]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52D14+835620]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52E6C+835964]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF48A41+793937]
-BaseThreadInitThunk [0x00007FFD565926AD+29]
-RtlUserThreadStart [0x00007FFD57B6AA68+40]
-
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
-at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
-at BrowserSetup.Base.openEdgeBrowser(Base.java:21)
-at TestNG.VerifyAboutUsPage.openBrowser(VerifyAboutUsPage.java:58)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-at org.testng.TestRunner.run(TestRunner.java:589)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyApplyOnline -->
-        <test-method is-config="true" signature="cleareObjects()[pri:0, instance:TestNG.VerifyLoginPage@1a451d4d]" started-at="2023-07-26T17:05:50 IST" name="cleareObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690371350800" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleareObjects -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestNG.VerifyLoginPage@1a451d4d]" started-at="2023-07-26T17:05:50 IST" name="afterClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690371350805" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- TestNG.VerifyLoginPage -->
-      <class name="TestNG.VerifyAboutUsPage">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:TestNG.VerifyAboutUsPage@7fa98a66]" started-at="2023-07-26T17:05:48 IST" name="openBrowser" finished-at="2023-07-26T17:05:50 IST" duration-ms="2149" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 112
-Current browser version is 115.0.1901.183 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: driver.version: EdgeDriver
-remote stacktrace: Backtrace:
-GetHandleVerifier [0x00007FF74DFBDF92+60274]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF4EBF2+818946]
-(No symbol) [0x00007FF74DBDDFAE]
-(No symbol) [0x00007FF74DC0E378]
-(No symbol) [0x00007FF74DC08D24]
-(No symbol) [0x00007FF74DC0440A]
-(No symbol) [0x00007FF74DC47341]
-(No symbol) [0x00007FF74DC3F343]
-(No symbol) [0x00007FF74DC11796]
-(No symbol) [0x00007FF74DC10975]
-(No symbol) [0x00007FF74DC11F04]
-Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DE527D7+1593703]
-Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DCFAC5D+185837]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE8FD47+36951]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE87E55+4453]
-Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF74E18FDB3+1319011]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF56CAC+851900]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52D14+835620]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52E6C+835964]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF48A41+793937]
-BaseThreadInitThunk [0x00007FFD565926AD+29]
-RtlUserThreadStart [0x00007FFD57B6AA68+40]
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 112
-Current browser version is 115.0.1901.183 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: driver.version: EdgeDriver
-remote stacktrace: Backtrace:
-GetHandleVerifier [0x00007FF74DFBDF92+60274]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF4EBF2+818946]
-(No symbol) [0x00007FF74DBDDFAE]
-(No symbol) [0x00007FF74DC0E378]
-(No symbol) [0x00007FF74DC08D24]
-(No symbol) [0x00007FF74DC0440A]
-(No symbol) [0x00007FF74DC47341]
-(No symbol) [0x00007FF74DC3F343]
-(No symbol) [0x00007FF74DC11796]
-(No symbol) [0x00007FF74DC10975]
-(No symbol) [0x00007FF74DC11F04]
-Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DE527D7+1593703]
-Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DCFAC5D+185837]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE8FD47+36951]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE87E55+4453]
-Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF74E18FDB3+1319011]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF56CAC+851900]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52D14+835620]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52E6C+835964]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF48A41+793937]
-BaseThreadInitThunk [0x00007FFD565926AD+29]
-RtlUserThreadStart [0x00007FFD57B6AA68+40]
-
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
-at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
-at BrowserSetup.Base.openEdgeBrowser(Base.java:21)
-at TestNG.VerifyAboutUsPage.openBrowser(VerifyAboutUsPage.java:58)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-at org.testng.TestRunner.run(TestRunner.java:589)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNG.VerifyAboutUsPage@7fa98a66]" started-at="2023-07-26T17:05:50 IST" name="createPOMObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690371350746" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createPOMObjects -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:TestNG.VerifyAboutUsPage@7fa98a66]" started-at="2023-07-26T17:05:50 IST" name="goToLoginPage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690371350764" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToLoginPage -->
-        <test-method signature="verifyAboutUsPage()[pri:1, instance:TestNG.VerifyAboutUsPage@7fa98a66]" started-at="2023-07-26T17:05:50 IST" name="verifyAboutUsPage" finished-at="2023-07-26T17:05:50 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 112
-Current browser version is 115.0.1901.183 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: driver.version: EdgeDriver
-remote stacktrace: Backtrace:
-GetHandleVerifier [0x00007FF74DFBDF92+60274]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF4EBF2+818946]
-(No symbol) [0x00007FF74DBDDFAE]
-(No symbol) [0x00007FF74DC0E378]
-(No symbol) [0x00007FF74DC08D24]
-(No symbol) [0x00007FF74DC0440A]
-(No symbol) [0x00007FF74DC47341]
-(No symbol) [0x00007FF74DC3F343]
-(No symbol) [0x00007FF74DC11796]
-(No symbol) [0x00007FF74DC10975]
-(No symbol) [0x00007FF74DC11F04]
-Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DE527D7+1593703]
-Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DCFAC5D+185837]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE8FD47+36951]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE87E55+4453]
-Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF74E18FDB3+1319011]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF56CAC+851900]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52D14+835620]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52E6C+835964]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF48A41+793937]
-BaseThreadInitThunk [0x00007FFD565926AD+29]
-RtlUserThreadStart [0x00007FFD57B6AA68+40]
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 112
-Current browser version is 115.0.1901.183 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: driver.version: EdgeDriver
-remote stacktrace: Backtrace:
-GetHandleVerifier [0x00007FF74DFBDF92+60274]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF4EBF2+818946]
-(No symbol) [0x00007FF74DBDDFAE]
-(No symbol) [0x00007FF74DC0E378]
-(No symbol) [0x00007FF74DC08D24]
-(No symbol) [0x00007FF74DC0440A]
-(No symbol) [0x00007FF74DC47341]
-(No symbol) [0x00007FF74DC3F343]
-(No symbol) [0x00007FF74DC11796]
-(No symbol) [0x00007FF74DC10975]
-(No symbol) [0x00007FF74DC11F04]
-Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DE527D7+1593703]
-Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DCFAC5D+185837]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE8FD47+36951]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE87E55+4453]
-Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF74E18FDB3+1319011]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF56CAC+851900]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52D14+835620]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52E6C+835964]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF48A41+793937]
-BaseThreadInitThunk [0x00007FFD565926AD+29]
-RtlUserThreadStart [0x00007FFD57B6AA68+40]
-
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
-at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
-at BrowserSetup.Base.openEdgeBrowser(Base.java:21)
-at TestNG.VerifyAboutUsPage.openBrowser(VerifyAboutUsPage.java:58)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-at org.testng.TestRunner.run(TestRunner.java:589)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAboutUsPage -->
-        <test-method is-config="true" signature="logOut(org.testng.ITestResult)[pri:0, instance:TestNG.VerifyAboutUsPage@7fa98a66]" started-at="2023-07-26T17:05:50 IST" name="logOut" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690371350776" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:TestNG.VerifyAboutUsPage@7fa98a66]" started-at="2023-07-26T17:05:50 IST" name="goToLoginPage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690371350782" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToLoginPage -->
-        <test-method signature="verifyCareerPage()[pri:2, instance:TestNG.VerifyAboutUsPage@7fa98a66]" started-at="2023-07-26T17:05:50 IST" name="verifyCareerPage" finished-at="2023-07-26T17:05:50 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 112
-Current browser version is 115.0.1901.183 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: driver.version: EdgeDriver
-remote stacktrace: Backtrace:
-GetHandleVerifier [0x00007FF74DFBDF92+60274]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF4EBF2+818946]
-(No symbol) [0x00007FF74DBDDFAE]
-(No symbol) [0x00007FF74DC0E378]
-(No symbol) [0x00007FF74DC08D24]
-(No symbol) [0x00007FF74DC0440A]
-(No symbol) [0x00007FF74DC47341]
-(No symbol) [0x00007FF74DC3F343]
-(No symbol) [0x00007FF74DC11796]
-(No symbol) [0x00007FF74DC10975]
-(No symbol) [0x00007FF74DC11F04]
-Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DE527D7+1593703]
-Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DCFAC5D+185837]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE8FD47+36951]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE87E55+4453]
-Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF74E18FDB3+1319011]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF56CAC+851900]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52D14+835620]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52E6C+835964]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF48A41+793937]
-BaseThreadInitThunk [0x00007FFD565926AD+29]
-RtlUserThreadStart [0x00007FFD57B6AA68+40]
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 112
-Current browser version is 115.0.1901.183 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: driver.version: EdgeDriver
-remote stacktrace: Backtrace:
-GetHandleVerifier [0x00007FF74DFBDF92+60274]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF4EBF2+818946]
-(No symbol) [0x00007FF74DBDDFAE]
-(No symbol) [0x00007FF74DC0E378]
-(No symbol) [0x00007FF74DC08D24]
-(No symbol) [0x00007FF74DC0440A]
-(No symbol) [0x00007FF74DC47341]
-(No symbol) [0x00007FF74DC3F343]
-(No symbol) [0x00007FF74DC11796]
-(No symbol) [0x00007FF74DC10975]
-(No symbol) [0x00007FF74DC11F04]
-Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DE527D7+1593703]
-Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DCFAC5D+185837]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE8FD47+36951]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE87E55+4453]
-Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF74E18FDB3+1319011]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF56CAC+851900]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52D14+835620]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52E6C+835964]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF48A41+793937]
-BaseThreadInitThunk [0x00007FFD565926AD+29]
-RtlUserThreadStart [0x00007FFD57B6AA68+40]
-
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
-at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
-at BrowserSetup.Base.openEdgeBrowser(Base.java:21)
-at TestNG.VerifyAboutUsPage.openBrowser(VerifyAboutUsPage.java:58)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-at org.testng.TestRunner.run(TestRunner.java:589)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCareerPage -->
-        <test-method is-config="true" signature="logOut(org.testng.ITestResult)[pri:0, instance:TestNG.VerifyAboutUsPage@7fa98a66]" started-at="2023-07-26T17:05:50 IST" name="logOut" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690371350790" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:TestNG.VerifyAboutUsPage@7fa98a66]" started-at="2023-07-26T17:05:50 IST" name="goToLoginPage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690371350793" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToLoginPage -->
-        <test-method signature="verifySmartBuyPage()[pri:3, instance:TestNG.VerifyAboutUsPage@7fa98a66]" started-at="2023-07-26T17:05:50 IST" name="verifySmartBuyPage" finished-at="2023-07-26T17:05:50 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 112
-Current browser version is 115.0.1901.183 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: driver.version: EdgeDriver
-remote stacktrace: Backtrace:
-GetHandleVerifier [0x00007FF74DFBDF92+60274]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF4EBF2+818946]
-(No symbol) [0x00007FF74DBDDFAE]
-(No symbol) [0x00007FF74DC0E378]
-(No symbol) [0x00007FF74DC08D24]
-(No symbol) [0x00007FF74DC0440A]
-(No symbol) [0x00007FF74DC47341]
-(No symbol) [0x00007FF74DC3F343]
-(No symbol) [0x00007FF74DC11796]
-(No symbol) [0x00007FF74DC10975]
-(No symbol) [0x00007FF74DC11F04]
-Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DE527D7+1593703]
-Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DCFAC5D+185837]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE8FD47+36951]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE87E55+4453]
-Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF74E18FDB3+1319011]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF56CAC+851900]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52D14+835620]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52E6C+835964]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF48A41+793937]
-BaseThreadInitThunk [0x00007FFD565926AD+29]
-RtlUserThreadStart [0x00007FFD57B6AA68+40]
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 112
-Current browser version is 115.0.1901.183 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: driver.version: EdgeDriver
-remote stacktrace: Backtrace:
-GetHandleVerifier [0x00007FF74DFBDF92+60274]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF4EBF2+818946]
-(No symbol) [0x00007FF74DBDDFAE]
-(No symbol) [0x00007FF74DC0E378]
-(No symbol) [0x00007FF74DC08D24]
-(No symbol) [0x00007FF74DC0440A]
-(No symbol) [0x00007FF74DC47341]
-(No symbol) [0x00007FF74DC3F343]
-(No symbol) [0x00007FF74DC11796]
-(No symbol) [0x00007FF74DC10975]
-(No symbol) [0x00007FF74DC11F04]
-Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DE527D7+1593703]
-Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF74DCFAC5D+185837]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE8FD47+36951]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DE87E55+4453]
-Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF74E18FDB3+1319011]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF56CAC+851900]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52D14+835620]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF52E6C+835964]
-Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF74DF48A41+793937]
-BaseThreadInitThunk [0x00007FFD565926AD+29]
-RtlUserThreadStart [0x00007FFD57B6AA68+40]
-
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
-at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
-at BrowserSetup.Base.openEdgeBrowser(Base.java:21)
-at TestNG.VerifyAboutUsPage.openBrowser(VerifyAboutUsPage.java:58)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-at org.testng.TestRunner.run(TestRunner.java:589)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySmartBuyPage -->
-        <test-method is-config="true" signature="logOut(org.testng.ITestResult)[pri:0, instance:TestNG.VerifyAboutUsPage@7fa98a66]" started-at="2023-07-26T17:05:50 IST" name="logOut" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690371350801" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="clearObjects()[pri:0, instance:TestNG.VerifyAboutUsPage@7fa98a66]" started-at="2023-07-26T17:05:50 IST" name="clearObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690371350806" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clearObjects -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestNG.VerifyAboutUsPage@7fa98a66]" started-at="2023-07-26T17:05:50 IST" name="afterTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690371350810" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- TestNG.VerifyAboutUsPage -->
-    </test> <!-- EdgeTest -->
-    <test started-at="2023-07-26T17:05:48 IST" name="ChromeTest" finished-at="2023-07-26T17:06:29 IST" duration-ms="41154">
-      <class name="TestNG.VerifyLoginPage">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:TestNG.VerifyLoginPage@636be97c]" started-at="2023-07-26T17:05:51 IST" name="openBrowser" finished-at="2023-07-26T17:05:52 IST" duration-ms="1333" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:TestNG.VerifyLoginPage@636be97c]" started-at="2023-07-26T20:32:20 IST" name="openBrowser" finished-at="2023-07-26T20:32:22 IST" duration-ms="1877" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -915,15 +18,15 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:TestNG.VerifyLoginPage@636be97c]" started-at="2023-07-26T17:05:53 IST" name="openBrowser" finished-at="2023-07-26T17:05:53 IST" duration-ms="44" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:TestNG.VerifyLoginPage@636be97c]" started-at="2023-07-26T20:32:22 IST" name="openBrowser" finished-at="2023-07-26T20:32:22 IST" duration-ms="33" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:TestNG.VerifyLoginPage@636be97c]" started-at="2023-07-26T17:05:53 IST" name="goToLoginPage" finished-at="2023-07-26T17:05:58 IST" duration-ms="5820" status="PASS">
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:TestNG.VerifyLoginPage@636be97c]" started-at="2023-07-26T20:32:22 IST" name="goToLoginPage" finished-at="2023-07-26T20:32:33 IST" duration-ms="11294" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoginPage -->
-        <test-method signature="verifyAgriPage()[pri:2, instance:TestNG.VerifyLoginPage@636be97c]" started-at="2023-07-26T17:05:58 IST" name="verifyAgriPage" finished-at="2023-07-26T17:06:29 IST" duration-ms="30795" status="FAIL">
+        <test-method signature="verifyAgriPage()[pri:2, instance:TestNG.VerifyLoginPage@636be97c]" started-at="2023-07-26T20:32:33 IST" name="verifyAgriPage" finished-at="2023-07-26T20:33:06 IST" duration-ms="32755" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Cannot locate an element using xpath=//a[text()='Kisan Gold Card - Agri Loan']
@@ -968,11 +71,11 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAgriPage -->
-        <test-method is-config="true" signature="cleareObjects()[pri:0, instance:TestNG.VerifyLoginPage@636be97c]" started-at="2023-07-26T17:06:29 IST" name="cleareObjects" finished-at="2023-07-26T17:06:29 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="cleareObjects()[pri:0, instance:TestNG.VerifyLoginPage@636be97c]" started-at="2023-07-26T20:33:06 IST" name="cleareObjects" finished-at="2023-07-26T20:33:06 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleareObjects -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:TestNG.VerifyLoginPage@636be97c]" started-at="2023-07-26T17:06:29 IST" name="goToLoginPage" finished-at="2023-07-26T17:06:29 IST" duration-ms="13" status="FAIL">
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:TestNG.VerifyLoginPage@636be97c]" started-at="2023-07-26T20:33:06 IST" name="goToLoginPage" finished-at="2023-07-26T20:33:06 IST" duration-ms="6" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
@@ -981,8 +84,8 @@ from unknown error: web view not found
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58086}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1363fe5691d90df934d7aa859f610cba]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60051}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 885231571d080113d949db24c2cd1518]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
@@ -991,8 +94,8 @@ from unknown error: web view not found
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58086}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1363fe5691d90df934d7aa859f610cba
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60051}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 885231571d080113d949db24c2cd1518
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -1031,7 +134,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoginPage -->
-        <test-method signature="verifyLoginToNetBankingPage()[pri:2, instance:TestNG.VerifyLoginPage@636be97c]" started-at="2023-07-26T17:06:29 IST" name="verifyLoginToNetBankingPage" finished-at="2023-07-26T17:06:29 IST" duration-ms="0" status="SKIP">
+        <test-method signature="verifyLoginToNetBankingPage()[pri:2, instance:TestNG.VerifyLoginPage@636be97c]" started-at="2023-07-26T20:33:06 IST" name="verifyLoginToNetBankingPage" finished-at="2023-07-26T20:33:06 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
@@ -1040,8 +143,8 @@ from unknown error: web view not found
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58086}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1363fe5691d90df934d7aa859f610cba]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60051}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 885231571d080113d949db24c2cd1518]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
@@ -1050,8 +153,8 @@ from unknown error: web view not found
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58086}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1363fe5691d90df934d7aa859f610cba
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60051}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 885231571d080113d949db24c2cd1518
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -1090,15 +193,15 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginToNetBankingPage -->
-        <test-method is-config="true" signature="cleareObjects()[pri:0, instance:TestNG.VerifyLoginPage@636be97c]" started-at="2023-07-26T17:06:29 IST" name="cleareObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690371389687" status="SKIP">
+        <test-method is-config="true" signature="cleareObjects()[pri:0, instance:TestNG.VerifyLoginPage@636be97c]" started-at="2023-07-26T20:33:06 IST" name="cleareObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690383786204" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleareObjects -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:TestNG.VerifyLoginPage@636be97c]" started-at="2023-07-26T17:06:29 IST" name="goToLoginPage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690371389689" status="SKIP">
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:TestNG.VerifyLoginPage@636be97c]" started-at="2023-07-26T20:33:06 IST" name="goToLoginPage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690383786205" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoginPage -->
-        <test-method signature="verifyApplyOnline()[pri:3, instance:TestNG.VerifyLoginPage@636be97c]" started-at="2023-07-26T17:06:29 IST" name="verifyApplyOnline" finished-at="2023-07-26T17:06:29 IST" duration-ms="0" status="SKIP">
+        <test-method signature="verifyApplyOnline()[pri:3, instance:TestNG.VerifyLoginPage@636be97c]" started-at="2023-07-26T20:33:06 IST" name="verifyApplyOnline" finished-at="2023-07-26T20:33:06 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
@@ -1107,8 +210,8 @@ from unknown error: web view not found
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58086}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1363fe5691d90df934d7aa859f610cba]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60051}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 885231571d080113d949db24c2cd1518]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
@@ -1117,8 +220,8 @@ from unknown error: web view not found
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58086}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1363fe5691d90df934d7aa859f610cba
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60051}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 885231571d080113d949db24c2cd1518
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -1157,17 +260,17 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyApplyOnline -->
-        <test-method is-config="true" signature="cleareObjects()[pri:0, instance:TestNG.VerifyLoginPage@636be97c]" started-at="2023-07-26T17:06:29 IST" name="cleareObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690371389694" status="SKIP">
+        <test-method is-config="true" signature="cleareObjects()[pri:0, instance:TestNG.VerifyLoginPage@636be97c]" started-at="2023-07-26T20:33:06 IST" name="cleareObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690383786209" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleareObjects -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestNG.VerifyLoginPage@636be97c]" started-at="2023-07-26T17:06:29 IST" name="afterClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690371389696" status="SKIP">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestNG.VerifyLoginPage@636be97c]" started-at="2023-07-26T20:33:06 IST" name="afterClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690383786209" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- TestNG.VerifyLoginPage -->
       <class name="TestNG.VerifyAboutUsPage">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:TestNG.VerifyAboutUsPage@4facf68f]" started-at="2023-07-26T17:05:48 IST" name="openBrowser" finished-at="2023-07-26T17:05:51 IST" duration-ms="3114" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:TestNG.VerifyAboutUsPage@4facf68f]" started-at="2023-07-26T20:32:18 IST" name="openBrowser" finished-at="2023-07-26T20:32:20 IST" duration-ms="2058" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1178,19 +281,19 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNG.VerifyAboutUsPage@4facf68f]" started-at="2023-07-26T17:05:53 IST" name="createPOMObjects" finished-at="2023-07-26T17:05:53 IST" duration-ms="44" status="PASS">
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNG.VerifyAboutUsPage@4facf68f]" started-at="2023-07-26T20:32:22 IST" name="createPOMObjects" finished-at="2023-07-26T20:32:22 IST" duration-ms="31" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPOMObjects -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:TestNG.VerifyAboutUsPage@4facf68f]" started-at="2023-07-26T17:05:53 IST" name="goToLoginPage" finished-at="2023-07-26T17:05:59 IST" duration-ms="6561" status="PASS">
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:TestNG.VerifyAboutUsPage@4facf68f]" started-at="2023-07-26T20:32:22 IST" name="goToLoginPage" finished-at="2023-07-26T20:32:29 IST" duration-ms="7418" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoginPage -->
-        <test-method signature="verifyAboutUsPage()[pri:1, instance:TestNG.VerifyAboutUsPage@4facf68f]" started-at="2023-07-26T17:05:59 IST" name="verifyAboutUsPage" finished-at="2023-07-26T17:06:08 IST" duration-ms="8490" status="PASS">
+        <test-method signature="verifyAboutUsPage()[pri:1, instance:TestNG.VerifyAboutUsPage@4facf68f]" started-at="2023-07-26T20:32:29 IST" name="verifyAboutUsPage" finished-at="2023-07-26T20:32:38 IST" duration-ms="9317" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAboutUsPage -->
-        <test-method is-config="true" signature="logOut(org.testng.ITestResult)[pri:0, instance:TestNG.VerifyAboutUsPage@4facf68f]" started-at="2023-07-26T17:06:08 IST" name="logOut" finished-at="2023-07-26T17:06:08 IST" duration-ms="173" status="PASS">
+        <test-method is-config="true" signature="logOut(org.testng.ITestResult)[pri:0, instance:TestNG.VerifyAboutUsPage@4facf68f]" started-at="2023-07-26T20:32:38 IST" name="logOut" finished-at="2023-07-26T20:32:39 IST" duration-ms="347" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1201,23 +304,23 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:TestNG.VerifyAboutUsPage@4facf68f]" started-at="2023-07-26T17:06:08 IST" name="goToLoginPage" finished-at="2023-07-26T17:06:08 IST" duration-ms="144" status="FAIL">
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:TestNG.VerifyAboutUsPage@4facf68f]" started-at="2023-07-26T20:32:39 IST" name="goToLoginPage" finished-at="2023-07-26T20:32:39 IST" duration-ms="386" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
               <![CDATA[invalid session id
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58071}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6517d2e681c803a1fa484a1efd63487a]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60025}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 262629895ac340b2860b48410866467b]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58071}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6517d2e681c803a1fa484a1efd63487a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60025}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 262629895ac340b2860b48410866467b
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -1256,23 +359,23 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoginPage -->
-        <test-method signature="verifyCareerPage()[pri:2, instance:TestNG.VerifyAboutUsPage@4facf68f]" started-at="2023-07-26T17:06:08 IST" name="verifyCareerPage" finished-at="2023-07-26T17:06:08 IST" duration-ms="0" status="SKIP">
+        <test-method signature="verifyCareerPage()[pri:2, instance:TestNG.VerifyAboutUsPage@4facf68f]" started-at="2023-07-26T20:32:39 IST" name="verifyCareerPage" finished-at="2023-07-26T20:32:39 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
               <![CDATA[invalid session id
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58071}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6517d2e681c803a1fa484a1efd63487a]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60025}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 262629895ac340b2860b48410866467b]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58071}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6517d2e681c803a1fa484a1efd63487a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60025}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 262629895ac340b2860b48410866467b
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -1311,31 +414,31 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCareerPage -->
-        <test-method is-config="true" signature="logOut(org.testng.ITestResult)[pri:0, instance:TestNG.VerifyAboutUsPage@4facf68f]" started-at="2023-07-26T17:06:08 IST" name="logOut" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690371368425" status="SKIP">
+        <test-method is-config="true" signature="logOut(org.testng.ITestResult)[pri:0, instance:TestNG.VerifyAboutUsPage@4facf68f]" started-at="2023-07-26T20:32:39 IST" name="logOut" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690383759672" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:TestNG.VerifyAboutUsPage@4facf68f]" started-at="2023-07-26T17:06:08 IST" name="goToLoginPage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690371368427" status="SKIP">
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:TestNG.VerifyAboutUsPage@4facf68f]" started-at="2023-07-26T20:32:39 IST" name="goToLoginPage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690383759676" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoginPage -->
-        <test-method signature="verifySmartBuyPage()[pri:3, instance:TestNG.VerifyAboutUsPage@4facf68f]" started-at="2023-07-26T17:06:08 IST" name="verifySmartBuyPage" finished-at="2023-07-26T17:06:08 IST" duration-ms="0" status="SKIP">
+        <test-method signature="verifySmartBuyPage()[pri:3, instance:TestNG.VerifyAboutUsPage@4facf68f]" started-at="2023-07-26T20:32:39 IST" name="verifySmartBuyPage" finished-at="2023-07-26T20:32:39 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
               <![CDATA[invalid session id
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58071}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6517d2e681c803a1fa484a1efd63487a]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60025}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 262629895ac340b2860b48410866467b]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58071}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6517d2e681c803a1fa484a1efd63487a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60025}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 262629895ac340b2860b48410866467b
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -1374,19 +477,505 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySmartBuyPage -->
-        <test-method is-config="true" signature="logOut(org.testng.ITestResult)[pri:0, instance:TestNG.VerifyAboutUsPage@4facf68f]" started-at="2023-07-26T17:06:08 IST" name="logOut" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690371368430" status="SKIP">
+        <test-method is-config="true" signature="logOut(org.testng.ITestResult)[pri:0, instance:TestNG.VerifyAboutUsPage@4facf68f]" started-at="2023-07-26T20:32:39 IST" name="logOut" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690383759684" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="clearObjects()[pri:0, instance:TestNG.VerifyAboutUsPage@4facf68f]" started-at="2023-07-26T17:06:08 IST" name="clearObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690371368432" status="SKIP">
+        <test-method is-config="true" signature="clearObjects()[pri:0, instance:TestNG.VerifyAboutUsPage@4facf68f]" started-at="2023-07-26T20:32:39 IST" name="clearObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690383759691" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearObjects -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestNG.VerifyAboutUsPage@4facf68f]" started-at="2023-07-26T17:06:29 IST" name="afterTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690371389697" status="SKIP">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestNG.VerifyAboutUsPage@4facf68f]" started-at="2023-07-26T20:33:06 IST" name="afterTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690383786210" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- TestNG.VerifyAboutUsPage -->
     </test> <!-- ChromeTest -->
+    <test started-at="2023-07-26T20:32:18 IST" name="EdgeTest" finished-at="2023-07-26T20:33:09 IST" duration-ms="51036">
+      <class name="TestNG.VerifyLoginPage">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:TestNG.VerifyLoginPage@7fa98a66]" started-at="2023-07-26T20:32:21 IST" name="openBrowser" finished-at="2023-07-26T20:32:25 IST" duration-ms="4362" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:TestNG.VerifyLoginPage@7fa98a66]" started-at="2023-07-26T20:32:25 IST" name="openBrowser" finished-at="2023-07-26T20:32:25 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:TestNG.VerifyLoginPage@7fa98a66]" started-at="2023-07-26T20:32:25 IST" name="goToLoginPage" finished-at="2023-07-26T20:32:36 IST" duration-ms="11015" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLoginPage -->
+        <test-method signature="verifyAgriPage()[pri:2, instance:TestNG.VerifyLoginPage@7fa98a66]" started-at="2023-07-26T20:32:36 IST" name="verifyAgriPage" finished-at="2023-07-26T20:33:09 IST" duration-ms="32285" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate an element using xpath=//a[text()='Kisan Gold Card - Agri Loan']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//a[text()='Kisan Gold Card - Agri Loan']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at Page.AgriPage.KisanGoldCardButton(AgriPage.java:21)
+at TestNG.VerifyLoginPage.verifyAgriPage(VerifyLoginPage.java:80)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAgriPage -->
+        <test-method is-config="true" signature="cleareObjects()[pri:0, instance:TestNG.VerifyLoginPage@7fa98a66]" started-at="2023-07-26T20:33:09 IST" name="cleareObjects" finished-at="2023-07-26T20:33:09 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleareObjects -->
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:TestNG.VerifyLoginPage@7fa98a66]" started-at="2023-07-26T20:33:09 IST" name="goToLoginPage" finished-at="2023-07-26T20:33:09 IST" duration-ms="4" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=115.0.1901.183)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.183, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60125}, msedge: {msedgedriverVersion: 114.0.1823.82 (ac4903679dd6..., userDataDir: C:\Users\amol\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 797501843b4fdf3d3884d0143bb0ad42]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=115.0.1901.183)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.183, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60125}, msedge: {msedgedriverVersion: 114.0.1823.82 (ac4903679dd6..., userDataDir: C:\Users\amol\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 797501843b4fdf3d3884d0143bb0ad42
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at TestNG.VerifyLoginPage.goToLoginPage(VerifyLoginPage.java:59)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLoginPage -->
+        <test-method signature="verifyLoginToNetBankingPage()[pri:2, instance:TestNG.VerifyLoginPage@7fa98a66]" started-at="2023-07-26T20:33:09 IST" name="verifyLoginToNetBankingPage" finished-at="2023-07-26T20:33:09 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=115.0.1901.183)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.183, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60125}, msedge: {msedgedriverVersion: 114.0.1823.82 (ac4903679dd6..., userDataDir: C:\Users\amol\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 797501843b4fdf3d3884d0143bb0ad42]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=115.0.1901.183)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.183, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60125}, msedge: {msedgedriverVersion: 114.0.1823.82 (ac4903679dd6..., userDataDir: C:\Users\amol\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 797501843b4fdf3d3884d0143bb0ad42
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at TestNG.VerifyLoginPage.goToLoginPage(VerifyLoginPage.java:59)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginToNetBankingPage -->
+        <test-method is-config="true" signature="cleareObjects()[pri:0, instance:TestNG.VerifyLoginPage@7fa98a66]" started-at="2023-07-26T20:33:09 IST" name="cleareObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690383789168" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleareObjects -->
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:TestNG.VerifyLoginPage@7fa98a66]" started-at="2023-07-26T20:33:09 IST" name="goToLoginPage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690383789169" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLoginPage -->
+        <test-method signature="verifyApplyOnline()[pri:3, instance:TestNG.VerifyLoginPage@7fa98a66]" started-at="2023-07-26T20:33:09 IST" name="verifyApplyOnline" finished-at="2023-07-26T20:33:09 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=115.0.1901.183)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.183, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60125}, msedge: {msedgedriverVersion: 114.0.1823.82 (ac4903679dd6..., userDataDir: C:\Users\amol\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 797501843b4fdf3d3884d0143bb0ad42]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=115.0.1901.183)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.183, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60125}, msedge: {msedgedriverVersion: 114.0.1823.82 (ac4903679dd6..., userDataDir: C:\Users\amol\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 797501843b4fdf3d3884d0143bb0ad42
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at TestNG.VerifyLoginPage.goToLoginPage(VerifyLoginPage.java:59)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApplyOnline -->
+        <test-method is-config="true" signature="cleareObjects()[pri:0, instance:TestNG.VerifyLoginPage@7fa98a66]" started-at="2023-07-26T20:33:09 IST" name="cleareObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690383789171" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleareObjects -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestNG.VerifyLoginPage@7fa98a66]" started-at="2023-07-26T20:33:09 IST" name="afterClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690383789173" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- TestNG.VerifyLoginPage -->
+      <class name="TestNG.VerifyAboutUsPage">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:TestNG.VerifyAboutUsPage@15ff3e9e]" started-at="2023-07-26T20:32:18 IST" name="openBrowser" finished-at="2023-07-26T20:32:21 IST" duration-ms="3320" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNG.VerifyAboutUsPage@15ff3e9e]" started-at="2023-07-26T20:32:25 IST" name="createPOMObjects" finished-at="2023-07-26T20:32:25 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPOMObjects -->
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:TestNG.VerifyAboutUsPage@15ff3e9e]" started-at="2023-07-26T20:32:25 IST" name="goToLoginPage" finished-at="2023-07-26T20:32:36 IST" duration-ms="10743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLoginPage -->
+        <test-method signature="verifyAboutUsPage()[pri:1, instance:TestNG.VerifyAboutUsPage@15ff3e9e]" started-at="2023-07-26T20:32:36 IST" name="verifyAboutUsPage" finished-at="2023-07-26T20:32:47 IST" duration-ms="10661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAboutUsPage -->
+        <test-method is-config="true" signature="logOut(org.testng.ITestResult)[pri:0, instance:TestNG.VerifyAboutUsPage@15ff3e9e]" started-at="2023-07-26T20:32:47 IST" name="logOut" finished-at="2023-07-26T20:32:49 IST" duration-ms="1798" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAboutUsPage status=SUCCESS method=VerifyAboutUsPage.verifyAboutUsPage()[pri:1, instance:TestNG.VerifyAboutUsPage@15ff3e9e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:TestNG.VerifyAboutUsPage@15ff3e9e]" started-at="2023-07-26T20:32:49 IST" name="goToLoginPage" finished-at="2023-07-26T20:32:49 IST" duration-ms="849" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.183, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60044}, msedge: {msedgedriverVersion: 114.0.1823.82 (ac4903679dd6..., userDataDir: C:\Users\amol\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0c6e6fbe0b6582884e93113a57906b24]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.183, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60044}, msedge: {msedgedriverVersion: 114.0.1823.82 (ac4903679dd6..., userDataDir: C:\Users\amol\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0c6e6fbe0b6582884e93113a57906b24
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at TestNG.VerifyAboutUsPage.goToLoginPage(VerifyAboutUsPage.java:73)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLoginPage -->
+        <test-method signature="verifyCareerPage()[pri:2, instance:TestNG.VerifyAboutUsPage@15ff3e9e]" started-at="2023-07-26T20:32:49 IST" name="verifyCareerPage" finished-at="2023-07-26T20:32:49 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.183, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60044}, msedge: {msedgedriverVersion: 114.0.1823.82 (ac4903679dd6..., userDataDir: C:\Users\amol\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0c6e6fbe0b6582884e93113a57906b24]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.183, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60044}, msedge: {msedgedriverVersion: 114.0.1823.82 (ac4903679dd6..., userDataDir: C:\Users\amol\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0c6e6fbe0b6582884e93113a57906b24
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at TestNG.VerifyAboutUsPage.goToLoginPage(VerifyAboutUsPage.java:73)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCareerPage -->
+        <test-method is-config="true" signature="logOut(org.testng.ITestResult)[pri:0, instance:TestNG.VerifyAboutUsPage@15ff3e9e]" started-at="2023-07-26T20:32:49 IST" name="logOut" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690383769968" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:TestNG.VerifyAboutUsPage@15ff3e9e]" started-at="2023-07-26T20:32:49 IST" name="goToLoginPage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690383769975" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLoginPage -->
+        <test-method signature="verifySmartBuyPage()[pri:3, instance:TestNG.VerifyAboutUsPage@15ff3e9e]" started-at="2023-07-26T20:32:49 IST" name="verifySmartBuyPage" finished-at="2023-07-26T20:32:49 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.183, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60044}, msedge: {msedgedriverVersion: 114.0.1823.82 (ac4903679dd6..., userDataDir: C:\Users\amol\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0c6e6fbe0b6582884e93113a57906b24]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.183, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60044}, msedge: {msedgedriverVersion: 114.0.1823.82 (ac4903679dd6..., userDataDir: C:\Users\amol\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0c6e6fbe0b6582884e93113a57906b24
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at TestNG.VerifyAboutUsPage.goToLoginPage(VerifyAboutUsPage.java:73)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySmartBuyPage -->
+        <test-method is-config="true" signature="logOut(org.testng.ITestResult)[pri:0, instance:TestNG.VerifyAboutUsPage@15ff3e9e]" started-at="2023-07-26T20:32:49 IST" name="logOut" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690383769995" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="clearObjects()[pri:0, instance:TestNG.VerifyAboutUsPage@15ff3e9e]" started-at="2023-07-26T20:32:50 IST" name="clearObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690383770007" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearObjects -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestNG.VerifyAboutUsPage@15ff3e9e]" started-at="2023-07-26T20:33:09 IST" name="afterTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690383789174" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- TestNG.VerifyAboutUsPage -->
+    </test> <!-- EdgeTest -->
   </suite> <!-- Suite -->
 </testng-results>

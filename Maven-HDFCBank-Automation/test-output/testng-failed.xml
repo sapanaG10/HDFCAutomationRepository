@@ -1,36 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="2" parallel="classes" name="EdgeTest(failed)">
-    <parameter name="browser" value="Edge"/>
-    <classes>
-      <class name="TestNG.VerifyAboutUsPage">
-        <methods>
-          <include name="clearObjects"/>
-          <include name="verifyAboutUsPage"/>
-          <include name="verifyCareerPage"/>
-          <include name="logOut"/>
-          <include name="verifySmartBuyPage"/>
-          <include name="openBrowser"/>
-          <include name="goToLoginPage"/>
-          <include name="createPOMObjects"/>
-          <include name="afterTest"/>
-        </methods>
-      </class> <!-- TestNG.VerifyAboutUsPage -->
-      <class name="TestNG.VerifyLoginPage">
-        <methods>
-          <include name="goToLoginPage"/>
-          <include name="afterClass"/>
-          <include name="verifyAgriPage"/>
-          <include name="verifyLoginToNetBankingPage"/>
-          <include name="verifyApplyOnline"/>
-          <include name="cleareObjects"/>
-          <include name="openBrowser"/>
-          <include name="openBrowser"/>
-        </methods>
-      </class> <!-- TestNG.VerifyLoginPage -->
-    </classes>
-  </test> <!-- EdgeTest(failed) -->
   <test thread-count="2" parallel="classes" name="ChromeTest(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
@@ -60,4 +30,33 @@
       </class> <!-- TestNG.VerifyLoginPage -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
+  <test thread-count="2" parallel="classes" name="EdgeTest(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="TestNG.VerifyAboutUsPage">
+        <methods>
+          <include name="clearObjects"/>
+          <include name="verifyCareerPage"/>
+          <include name="logOut"/>
+          <include name="verifySmartBuyPage"/>
+          <include name="openBrowser"/>
+          <include name="goToLoginPage"/>
+          <include name="createPOMObjects"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- TestNG.VerifyAboutUsPage -->
+      <class name="TestNG.VerifyLoginPage">
+        <methods>
+          <include name="goToLoginPage"/>
+          <include name="afterClass"/>
+          <include name="verifyAgriPage"/>
+          <include name="verifyLoginToNetBankingPage"/>
+          <include name="verifyApplyOnline"/>
+          <include name="cleareObjects"/>
+          <include name="openBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- TestNG.VerifyLoginPage -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
