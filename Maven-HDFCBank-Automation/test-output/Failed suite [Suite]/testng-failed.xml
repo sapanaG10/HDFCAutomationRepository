@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="ChromeTest(failed)(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="TestNG.VerifyAboutUsPage">
+        <methods>
+          <include name="clearObjects"/>
+          <include name="verifyCareerPage"/>
+          <include name="logOut"/>
+          <include name="verifySmartBuyPage"/>
+          <include name="openBrowser"/>
+          <include name="goToLoginPage"/>
+          <include name="createPOMObjects"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- TestNG.VerifyAboutUsPage -->
+    </classes>
+  </test> <!-- ChromeTest(failed)(failed) -->
+  <test thread-count="2" parallel="classes" name="EdgeTest(failed)(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="TestNG.VerifyAboutUsPage">
+        <methods>
+          <include name="clearObjects"/>
+          <include name="verifyCareerPage"/>
+          <include name="logOut"/>
+          <include name="verifySmartBuyPage"/>
+          <include name="openBrowser"/>
+          <include name="goToLoginPage"/>
+          <include name="createPOMObjects"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- TestNG.VerifyAboutUsPage -->
+    </classes>
+  </test> <!-- EdgeTest(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->
