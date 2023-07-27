@@ -68,8 +68,9 @@ public class VerifyAboutUsPage extends Base {
 	    careersPage=new CareersPage(driver);
 	}
 	@BeforeMethod
-	public void goToLoginPage() throws InterruptedException {
+	public void goToLoginPage() throws InterruptedException{
 		System.out.println("before method");
+		Thread.sleep(3000);
 	    driver.get("https://www.hdfcbank.com/");
 	    Thread.sleep(3000);
 	}
